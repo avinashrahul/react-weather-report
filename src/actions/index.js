@@ -13,7 +13,7 @@ export function fetchWeather(city) {
   const url = `${ROOT_URL}&q=${city},us`
   // from axios documentation to make get request
   const request = axios.get(url);
-
+  // Once the request is resolved then only it passes to reducers 
   return {
     type: FETCH_WEATHER,
     payload: request
