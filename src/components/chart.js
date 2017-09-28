@@ -1,4 +1,3 @@
-// lets create a functional component since we dont need to make use of state as it needs in class component
 import _ from 'lodash';
 import React from 'react';
 //https://github.com/borisyankov/react-sparklines
@@ -7,6 +6,8 @@ import { Sparklines, SparklinesLine } from 'react-sparklines';
 function average(data) {
   return _.round(_.sum(data)/data.length)
 }
+
+// lets create a functional component since we dont need to make use of state as it needs in class component
 
 export default (props) => {
   return(
